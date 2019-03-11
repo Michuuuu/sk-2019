@@ -39,12 +39,22 @@ Zadanie
 ------------
 
 ![zadanie 3](cwiczenia3.svg)
+https://tlk.io/sk-2019
+https://file.pizza/eggplant-cumin-capers-parsley
 
 1.
    * Przygotuj konfigurację sieci zgodnie z powyższym diagramem, 
+   1)Sprawdzamy obecny adres  IP komendą : ip addr
+   2)przypisujemy adres ip komendą : ip addr add 172.16.100.10/24 dev enp0s3(1 komputer ) ip addr add 172.16.100.11/24( 2 komputer) dev enp0s3
+   3)Wyłaczamy serwer / włączamy
    * Przetestuj połączenie poleceniem ping
+   1)Testujemy poleceniem ping [adres IP ]
 2.
    * Zainstaluj na komputerze ``PC1`` serwer programu ``HTTP CHAT`` dostępnego pod adresem ``https://github.com/jkanclerz/http-chat``
+   W pliku z pizzy jest zainstalowany folder chat
+   przechodzimy komendą pwd - ls jak już jesteśmy w http chat przechodzimy do chat sever cd http-chat/server
+   
+   
    * Przetestuj komunikację wysyłając wiadomość z komputera ``PC2``, upewnij się czy jest widoczna w konsoli serwera
 3.
    * Dodaj do istniejącej sieci komputer ``PC3`` pod kontroloą systemu windows
